@@ -23,6 +23,7 @@ tr '123456' '654321'
 ```
 
 Input: `654321`
+
 Output: `123456`
 
 ## While loop with increment
@@ -33,6 +34,15 @@ x=0
 while [ $x -lt $n ]; do
     # Do something
     x=$(($x + 1)) # Increment
+done
+```
+
+## For `i` in `seq`
+
+```sh
+n=10
+for i in `seq $n`; do
+    echo $i
 done
 ```
 
